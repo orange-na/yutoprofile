@@ -9,9 +9,9 @@ export function Header() {
     console.log(path);
     return (
       <header className="bg-white border-b border-gray-200 fixed z-10 w-full">
-        <div className="container m-auto h-[150px] flex justify-between items-center">
-            <h1><Link href='/' className="font-noto text-3xl">Yuto Namba</Link></h1>
-            <ul className="flex gap-14 text-[20px]">
+        <div className="container px-16 m-auto h-[110px] flex justify-between items-center">
+            <h1><Link href='/' className="font-noto text-[23px]">Yuto Namba</Link></h1>
+            <ul className="flex gap-14 text-[15px]">
                 <li>
                     {path === '' ? <Link className="hover:text-gray-600 duration-300 border-b-2 border-gray-400 px-2 py-1" href='/'>Works</Link>
                     : <Link className="hover:text-gray-600 duration-300 px-2 py-1" href='/'>Works</Link>
