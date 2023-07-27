@@ -15,7 +15,7 @@ export function Myself() {
             <div className="flex flex-col h-[100vh] items-center justify-center js-show-on-scroll">
                 {/* <h1 className="text-7xl animate-appear font-thin tracking-[15px] hover:animate-bounce">Namba Yuto</h1> */}
                 <div className="flex flex-col items-center">
-                    <div className="flex gap-10">
+                    <div className="flex gap-8 sm:gap-10">
                         <div className="flex">
                             <h1 className="text-[30px] tracking-[6px] leading-none animate-appear font-thin sm:tracking-[15px] hover:animate-bounce cursor-pointer sm:text-[55px]">Y</h1>
                             <h1 className="text-[30px] tracking-[6px] leading-none animate-appear font-thin sm:tracking-[15px] hover:animate-bounce cursor-pointer sm:text-[55px]">U</h1>
@@ -30,10 +30,10 @@ export function Myself() {
                             <h1 className="text-[30px] tracking-[6px] leading-none animate-appear font-thin sm:tracking-[15px] hover:animate-bounce cursor-pointer sm:text-[55px]">A</h1>
                         </div>
                     </div>
-                    <p className="text-[13px] tracking-[5px] font-noto font-bold sm:text-[18px] sm:tracking-[15px] text-parimary">This is my portfolio site.</p>
+                    <p className="text-[13px] tracking-[6px] font-noto font-bold sm:text-[18px] sm:tracking-[15px] text-parimary">This is my portfolio site.</p>
                 </div>
                 <div className="flex flex-col -scale-y-100 items-center text-gray-300">
-                    <div className="flex gap-10 italic">
+                    <div className="flex gap-8 sm:gap-10 italic">
                         <div className="flex">
                             <h1 className="text-[30px] tracking-[6px] leading-none animate-appear font-thin sm:tracking-[15px] hover:animate-bounce cursor-pointer sm:text-[55px]">Y</h1>
                             <h1 className="text-[30px] tracking-[6px] leading-none animate-appear font-thin sm:tracking-[15px] hover:animate-bounce cursor-pointer sm:text-[55px]">U</h1>
@@ -48,7 +48,7 @@ export function Myself() {
                             <h1 className="text-[30px] tracking-[6px] leading-none animate-appear font-thin sm:tracking-[15px] hover:animate-bounce cursor-pointer sm:text-[55px]">A</h1>
                         </div>
                     </div>
-                    <p className="text-[13px] tracking-[5px] font-noto font-bold sm:text-[18px] leading-none sm:tracking-[15px] text-gray-300 italic">This is my portfolio site.</p>
+                    <p className="text-[13px] tracking-[6px] font-noto font-bold sm:text-[18px] leading-none sm:tracking-[15px] text-gray-300 italic">This is my portfolio site.</p>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@ export function Myself() {
                             </div>
                             <div className="flex flex-col p-2">
                                 <h2 className="font-bold sm:text-2xl">This is my portfolio site.</h2>
-                                <p className="sm:text-lg">Nest.js, Tailwind</p>
+                                <p className="sm:text-lg">Next.js, Tailwind</p>
                             </div>
                         </div>
 

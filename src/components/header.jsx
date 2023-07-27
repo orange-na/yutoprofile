@@ -13,7 +13,7 @@ export function Header() {
             <h1><Link href='/' className="font-bold text-18px sm:text-[23px]">Yuto Namba</Link></h1>
             <ul className="sm:gap-14 gap-5 text-[15px] flex">
                 <li>
-                    {path === '' ? <Link className="hover:text-gray-600 duration-300 border-b-2 border-gray-400 px-2 py-1" href='/'>Works</Link>
+                    {path === '' ? <Link className="hover:text-gray-600 duration-300 border-b-2 border-gray-400 sm:px-2 py-1" href='/'>Works</Link>
                     : <Link className="hover:text-gray-600 duration-300 sm:px-2 py-1" href='/'>Works</Link>
                     }
                 </li>

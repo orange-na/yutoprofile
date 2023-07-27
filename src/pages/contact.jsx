@@ -17,7 +17,7 @@ export default function Contact() {
       <Header />
       <div className="flex flex-col items-center justify-center h-screen w-full overflow-hidden container px-6 sm:px-16 m-auto">
         <div className="container m-auto js-show-on-scroll">
-            <h1 className="text-[50px] sm:text-[55px] font-thin tracking-[10px] text-center mb-7 pt-10 sm:mb-3 sm:pt-16">Contact</h1>
+            <h1 className="text-[50px] sm:text-[55px] font-thin tracking-[10px] text-center mb-5 pt-10 sm:mb-3 sm:pt-16">Contact</h1>
             <form action="">
                 <p className="text-[23px] font-thin tracking-[2px] mb-1">NAME</p>
                 <input type="text" name="name" id="" className="w-full py-4 px-5 border-gray-300 border mb-7 rounded-md"/>
