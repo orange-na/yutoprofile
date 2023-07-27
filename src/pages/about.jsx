@@ -1,6 +1,9 @@
 import { Header } from "@/components/header";
 import { ScrollContext } from "@/pages/_app";
 import { useContext, useEffect } from "react";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import BookIcon from '@mui/icons-material/Book';
+import Link from "next/link";
 
 
 export default function About() {
@@ -13,12 +16,16 @@ export default function About() {
     return (
       <>
         <Header />
-        <div className="transition-all delay-700 duration-500 h-screen w-full overflow-hidden container px-16 m-auto">
-            <div className="flex flex-col h-[100vh] items-center justify-center js-show-on-scroll">
-                <div className="flex items-center justify-center flex-col gap-8 container">
-                    <div className="flex items-center justify-between mb-6 w-full">
-                        <h1 className="text-[55px] font-thin tracking-[8px]">YUTO NAMBA</h1>
-                        <p className="text-3xl font-thin border-l-2 border-gray-400 px-10 py-3 tracking-[3px]">Web Developer</p>
+        <div className="h-screen w-full container sm:px-16 m-auto pt-32 sm:pt-0">
+            <div className="flex flex-col sm:h-[100vh] items-center justify-center js-show-on-scroll">
+                <div className="flex items-center justify-center flex-col gap-7 sm:gap-8 container px-6 pb-20 sm:pb-0 sm:px-0">
+                    <div className="flex flex-col sm:flex-row items-center justify-between mb-6 w-full text-center">
+                        <h1 className="sm:text-[55px] text-[30px] font-thin tracking-[8px] animate-pulse2">YUTO NAMBA</h1>
+                        <div className="order-1 mt-3 sm:mt-0 sm:order-none">
+                            <Link href='https://www.linkedin.com/in/yuto-namba-a414b7284/'><LinkedInIcon sx={{ fontSize: 40 }} className="text-gray-700 hover:text-gray-500 duration-200"/></Link>
+                            <Link href='https://dev.to/orange-na'><BookIcon sx={{ fontSize: 40 }} className="text-gray-700 hover:text-gray-500 duration-200"/></Link>
+                        </div>
+                        <p className="sm:text-3xl font-thin sm:border-l-2 sm:border-gray-400 px-10 py-3 tracking-[3px]">Web Developer</p>
                     </div>
                     <p className="tracking-wider text-[20px] font-thin">
                         Welcome to my web portfolio! I am passionate about all things tech and on a mission to become a skilled Web Developer. While I may not have professional experience in the field just yet, I am driven by a thirst for knowledge and a genuine love for coding.
@@ -48,6 +55,8 @@ export default function About() {
                 <div className="bg-gray-400 blur-3xl w-48 h-48 rounded-full absolute top-[900px] left-[200px] -z-10 animate-pulse">
                 </div>
                 <div className="bg-gray-400 blur-3xl w-48 h-48 rounded-full absolute top-[150px] left-[800px] -z-10 animate-pulse">
+                </div>
+                <div className="bg-gray-400 blur-3xl w-24 h-24 rounded-full absolute top-[50px] left-[1300px] -z-10 animate-pulse3">
                 </div>
             </div>
         </div>

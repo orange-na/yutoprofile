@@ -15,9 +15,9 @@ export default function Contact() {
     return (
       <>
       <Header />
-      <div className="flex flex-col items-center justify-center h-screen w-full overflow-hidden container px-16 m-auto">
+      <div className="flex flex-col items-center justify-center h-screen w-full overflow-hidden container px-6 sm:px-16 m-auto">
         <div className="container m-auto js-show-on-scroll">
-            <h1 className="text-[55px] font-thin tracking-[10px] text-center mb-3 pt-16">Contact</h1>
+            <h1 className="text-[50px] sm:text-[55px] font-thin tracking-[10px] text-center mb-7 pt-10 sm:mb-3 sm:pt-16">Contact</h1>
             <form action="">
                 <p className="text-[23px] font-thin tracking-[2px] mb-1">NAME</p>
                 <input type="text" name="name" id="" className="w-full py-4 px-5 border-gray-300 border mb-7 rounded-md"/>
@@ -26,7 +26,7 @@ export default function Contact() {
                 <p className="text-[23px] font-thin tracking-[2px] mb-1">MESSAGE</p>
                 <textarea name="message" id="" cols="30" rows="5" className="w-full py-2 px-5 border-gray-300 border mb-7 rounded-md"></textarea>
                 <div className="w-full flex justify-center">
-                    <button className="bg-gray-600 text-white py-3 px-32 rounded-md text-[18px] hover:bg-gray-500 duration-200">Send</button>
+                    <button className="bg-gray-600 text-white py-3 px-32 rounded-md text-[18px] hover:bg-gray-500 duration-200 w-full sm:w-auto">Send</button>
                 </div>
             </form>
         </div>
@@ -47,6 +47,8 @@ export default function Contact() {
                 <div className="bg-gray-400 blur-3xl w-48 h-48 rounded-full absolute top-[900px] left-[200px] -z-10 animate-pulse">
                 </div>
                 <div className="bg-gray-400 blur-3xl w-48 h-48 rounded-full absolute top-[150px] left-[800px] -z-10 animate-pulse">
+                </div>
+                <div className="bg-gray-400 blur-3xl w-24 h-24 rounded-full absolute top-[50px] left-[1300px] -z-10 animate-pulse3">
                 </div>
             </div>
       </div>
