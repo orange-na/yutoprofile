@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { createContext, useContext, useEffect } from "react";
 import { ScrollContext, UserCount } from "@/pages/_app";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 export function Myself() {
   const scrollFadeIn = useContext(ScrollContext);
@@ -101,14 +103,34 @@ export function Myself() {
                 className="object-cover h-full w-full"
               />
               <div className="flex items-center justify-center absolute w-full h-full top-0 -left-[100%] group-hover:bg-[#c0c0c064] group-hover:left-0 duration-300">
-                <div className="bg-white opacity-[88%] w-[80%] h-[80%] flex items-center justify-center rounded-lg">
-                  <p className="text-[20px]">Portfolio</p>
+                <div className="bg-white opacity-[88%] w-[80%] h-[80%] flex items-center justify-center flex-col gap-7 rounded-lg">
+                  <p className="text-[20px] font-extrabold">My Portfolio</p>
+                  <div className="flex gap-10 font-bold">
+                    <p>Next.js</p>
+                    <p>Tailwind</p>
+                  </div>
+                  <div className="flex items-center justify-center gap-5">
+                    <Link href="https://github.com/orange-na/yutoprofile.git">
+                      <span className="hover:text-gray-600 duration-300">
+                        Code
+                        <GitHubIcon
+                          sx={{ fontSize: 25 }}
+                          className="ml-1 text-gray-800 hover:text-gray-600 duration-300 z-30"
+                        />
+                      </span>
+                    </Link>
+                    <Link href="https://yutoprofile.vercel.app/">
+                      <span className="hover:text-gray-600 duration-300">
+                        Live Demo
+                        <OpenInNewIcon
+                          sx={{ fontSize: 25 }}
+                          className="ml-1 text-gray-800 hover:text-gray-600 duration-300 z-30"
+                        />
+                      </span>
+                    </Link>
+                  </div>
                 </div>
               </div>
-              <Link
-                href="https://yutoprofile.vercel.app/"
-                className="w-full h-full z-10 block absolute top-0 left-0 opacity-0"
-              ></Link>
             </div>
             <div className="flex flex-col p-2 sm:p-4 sm:gap-2">
               <h2 className="font-bold sm:text-2xl">
@@ -117,6 +139,7 @@ export function Myself() {
               <p className="sm:text-lg">Next.js, Tailwind</p>
             </div>
           </div>
+
           <div>
             <div className="relative group overflow-hidden shadow-xl w-full">
               <img
@@ -125,18 +148,41 @@ export function Myself() {
                 className="object-cover h-full w-full"
               />
               <div className="flex items-center justify-center absolute w-full h-full top-0 -left-[100%] group-hover:bg-[#c0c0c064] group-hover:left-0 duration-300">
-                <div className="bg-white opacity-[88%] w-[80%] h-[80%] flex items-center justify-center rounded-lg">
-                  <p className="text-[20px]">Weather Forcast App</p>
+                <div className="bg-white opacity-[88%] w-[80%] h-[80%] flex items-center justify-center flex-col gap-7 rounded-lg">
+                  <p className="text-[20px] font-extrabold">
+                    Weather Forcast App
+                  </p>
+                  <div className="flex gap-10 font-bold">
+                    <p>HTML</p>
+                    <p>SCSS</p>
+                    <p>JavaScript</p>
+                  </div>
+                  <div className="flex items-center justify-center gap-5">
+                    <Link href="https://github.com/orange-na/CICCC-Web-Dev2-WeatherApp.git">
+                      <span className="hover:text-gray-600 duration-300">
+                        Code
+                        <GitHubIcon
+                          sx={{ fontSize: 25 }}
+                          className="ml-1 text-gray-800 hover:text-gray-600 duration-300 z-30"
+                        />
+                      </span>
+                    </Link>
+                    <Link href="https://orange-na.github.io/CICCC-Web-Dev2-WeatherApp/">
+                      <span className="hover:text-gray-600 duration-300">
+                        Live Demo
+                        <OpenInNewIcon
+                          sx={{ fontSize: 25 }}
+                          className="ml-1 text-gray-800 hover:text-gray-600 duration-300 z-30"
+                        />
+                      </span>
+                    </Link>
+                  </div>
                 </div>
               </div>
-              <Link
-                href="https://orange-na.github.io/CICCC-Web-Dev2-WeatherApp/"
-                className="w-full h-full z-10 block absolute top-0 left-0 opacity-0"
-              ></Link>
             </div>
             <div className="flex flex-col p-2 sm:p-4 sm:gap-2">
               <h2 className="font-bold sm:text-2xl">Weather Forcast App.</h2>
-              <p className="sm:text-lg">HTML, Sass, JavaScript</p>
+              <p className="sm:text-lg">HTML, SCSS, JavaScript</p>
             </div>
           </div>
         </div>
