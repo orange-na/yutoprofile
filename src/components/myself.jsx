@@ -104,8 +104,10 @@ export function Myself() {
               />
               <div className="flex items-center justify-center absolute w-full h-full top-0 -left-[100%] group-hover:bg-[#c0c0c064] group-hover:left-0 duration-300">
                 <div className="bg-white opacity-[88%] w-[80%] h-[80%] flex items-center justify-center flex-col gap-3 sm:gap-7 rounded-lg">
-                  <p className="text-[20px] font-extrabold">My Portfolio</p>
-                  <div className="flex gap-5 sm:gap-10 font-bold">
+                  <p className="text-[16px] sm:text-[20px] font-extrabold">
+                    My Portfolio
+                  </p>
+                  <div className="flex gap-5 text-[13px] sm:text-[16px] sm:gap-10 font-bold">
                     <p>Next.js</p>
                     <p>Tailwind</p>
                   </div>
@@ -149,10 +151,10 @@ export function Myself() {
               />
               <div className="flex items-center justify-center absolute w-full h-full top-0 -left-[100%] group-hover:bg-[#c0c0c064] group-hover:left-0 duration-300">
                 <div className="bg-white opacity-[88%] w-[80%] h-[80%] flex items-center justify-center flex-col gap-3 sm:gap-7 rounded-lg">
-                  <p className="text-[20px] font-extrabold">
+                  <p className="text-[16px] sm:text-[20px] font-extrabold">
                     Weather Forcast App
                   </p>
-                  <div className="flex gap-5 sm:gap-10 font-bold">
+                  <div className="flex text-[13px] sm:text-[16px] gap-5 sm:gap-10 font-bold">
                     <p>HTML</p>
                     <p>SCSS</p>
                     <p>JavaScript</p>
@@ -195,8 +197,10 @@ export function Myself() {
               />
               <div className="flex items-center justify-center absolute w-full h-full top-0 -left-[100%] group-hover:bg-[#c0c0c064] group-hover:left-0 duration-300">
                 <div className="bg-white opacity-[88%] w-[80%] h-[80%] flex items-center justify-center flex-col gap-3 sm:gap-7 rounded-lg">
-                  <p className="text-[20px] font-extrabold">To Do List App</p>
-                  <div className="flex gap-5 sm:gap-5 font-bold">
+                  <p className="text-[16px] sm:text-[20px] font-extrabold">
+                    To Do List App
+                  </p>
+                  <div className="flex gap-3 text-[13px] sm:text-[16px] sm:gap-5 font-bold">
                     <p>React</p>
                     <p>Tailwind</p>
                     <p>Express.js</p>
